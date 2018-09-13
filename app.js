@@ -18,3 +18,21 @@ const checkPalindrome = (str) => {
     else return false;
 }
 
+// 3.
+
+const sumDigits = (num) => {
+    const digitString = num.toString().split("");
+    // console.log(digitString);
+    let newArray = [];
+    for(let i=0; i<digitString.length; i++){
+        newArray.push(Number(digitString[i]));
+    }
+    // const digits = digitString.forEach(function(element){
+    //     Number(element);
+    // });
+    let sum = 0;
+    for(let j=0; j<newArray.length; j++){
+        sum = sum + newArray[j];
+    }
+    return sum;
+}
