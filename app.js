@@ -54,3 +54,25 @@ const sumArray = (array) => {
     return sum;
 }
 
+// 6. Prime Numbers
+
+const checkPrime = (num) => {
+    const root = Math.sqrt(num);
+    for(let i=2;i<=root; i++){
+        if(Number.isInteger(num/i)){
+            return false;
+        }
+    }
+    return true;
+};
+
+// second function
+
+const printPrimes = (limit) => {
+    for(let i=0; i<limit; i++){
+        if(checkPrime(i)){
+            console.log(i);
+        }
+    }
+};
+
