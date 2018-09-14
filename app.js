@@ -36,3 +36,10 @@ const sumDigits = (num) => {
     }
     return sum;
 }
+
+// 4. Pythagoras
+
+const calculateSide = (sideA, sideB) => {
+    const sideC =  Math.sqrt((sideA*sideA) + (sideB*sideB));
+    return sideC;
+}
