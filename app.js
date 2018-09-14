@@ -43,3 +43,14 @@ const calculateSide = (sideA, sideB) => {
     const sideC =  Math.sqrt((sideA*sideA) + (sideB*sideB));
     return sideC;
 }
+
+// 5. Sum Array
+
+const sumArray = (array) => {
+    let sum = 0;
+    for(let i=0; i<array.length; i++){
+        sum = sum + array[i];
+    }
+    return sum;
+}
+
